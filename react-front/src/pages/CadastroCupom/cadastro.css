@@ -1,0 +1,121 @@
+/* Estilos para o container do cadastro de produtos / cupons */
+.cadastro-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.texto-titulo {
+  font-family: 'Great Vibes', cursive;
+}
+
+/* Estilos para o formulário de cadastro */
+.cadastro-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para os grupos de formulário */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Estilos para os rótulos */
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilos para os inputs, textarea e select */
+input, textarea, select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* Estilos para o botão de cadastrar */
+.btn-cadastrar {
+  padding: 10px;
+  background-color: #0C4B33;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.btn-cadastrar:hover {
+  background-color: #0C4B33;
+}
+
+/* Estilos para inputs numéricos */
+input[type="number"] {
+  -moz-appearance: textfield; /* Remove a seta do input number no Firefox */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Estilos para textarea */
+textarea {
+  resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .cadastro-container {
+    padding: 15px;
+  }
+
+  .btn-cadastrar {
+    font-size: 14px;
+  }
+}
+
+/* ----------------- Estilos para os tickets de cupom ----------------- */
+.cupons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.ticket {
+  background: #fffbea;
+  border: 2px dashed #f2b632;
+  border-radius: 8px;
+  padding: 15px 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.ticket:hover {
+  transform: scale(1.05);
+}
+
+.ticket-code {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.ticket-info {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.slick-slider,
+.slick-list,
+.slick-track,
+.slick-slide > div {
+  height: 100% !important;
+}
+
+
+/* Customiza setas */
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+  font-size: 30px;
+}
+
+/* Customiza bolinhas */
+.slick-dots li button:before {
+  color: black;
+  opacity: 1;
+  z-index: 9999;
+}
+
+.slick-dots li.slick-active button:before {
+  color: black;
+  opacity: 1;
+  z-index: 9999;
+}
+
+.slick-slider .slick-prev:before {
+  color: black !important;
+  font-size: 25px;
+  z-index: 9999;
+}
+
+.slick-slider .slick-next:before {
+  color: black !important;
+  font-size: 25px;
+   z-index: 9999;
+}
+
+
+

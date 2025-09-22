@@ -1,0 +1,124 @@
+/* Container principal do formulário de entradas e saídas */
+.cadastro-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilo para títulos com fonte cursiva */
+.texto-titulo {
+  font-family: 'Great Vibes', cursive;
+}
+
+/* Formulário */
+.cadastro-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Grupos de campos */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Rótulos */
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Inputs, textarea e select */
+input, textarea, select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* Botão de cadastrar / registrar */
+.btn-cadastrar {
+  padding: 10px;
+  background-color: #0C4B33;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.btn-cadastrar:hover {
+  background-color: #0C4B33;
+}
+
+/* Inputs numéricos */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Textarea */
+textarea {
+  resize: vertical;
+}
+
+/* Tabela de histórico */
+.historico-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.historico-container h2 {
+  margin-bottom: 15px;
+}
+
+.historico-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.historico-table th,
+.historico-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.historico-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .cadastro-container,
+  .historico-container {
+    padding: 15px;
+  }
+
+  .btn-cadastrar {
+    font-size: 14px;
+  }
+
+  .historico-table th,
+  .historico-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
